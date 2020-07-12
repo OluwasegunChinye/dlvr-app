@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="" >
+    <v-container>
+      <v-row style="justify-content: center;">
+        <v-col cols="12" sm="6" style="margin-top: 200px;">
+          <v-btn class="text-capitalize pa-5 white--text" block style="margin-bottom: 40px;" color="#009688" large router to="/Renew-drivers-licence">Renew licence</v-btn>
+          <v-btn class="text-capitalize pa-5 white--text" block color="#03A9F4" large router to="/Renew-vehicle-docs">Renew Vehicle Registration</v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
+ 
   components: {
-    HelloWorld
+  
   }
 }
 </script>
