@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <v-form>
+    <div >
+        <v-form >
             <v-container>
                 <v-row style="justify-content: center;" justify="center;">
                     <v-col cols="12" sm="6" style="margin-top: 200px;">
@@ -11,7 +11,7 @@
                             <v-dialog v-model="dialog" persistent max-width="400">
                                 <template v-slot:activator="{ on, attrs }">
                                     <v-container>
-                                        <v-btn dark v-bind="attrs" v-on="on" block large> send </v-btn>
+                                        <v-btn color="#00E676" v-bind="attrs" v-on="on" block large class="text-capitalize white--text "> send </v-btn>
                                     </v-container>
                                 </template>
                                 <v-card>
@@ -19,7 +19,7 @@
                                     <v-text-field label="enter pin" class="pa-5" outlined="" type="password" hint="enter 0000"></v-text-field>
                                     <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="green darken-1" text @click="dialog  = false" router to="/my-profile">Got it</v-btn>
+                                    <v-btn color="#00E676" @click="dialog  = false" router to="/my-profile" class="text-capitalize white--text " >Done</v-btn>
                                     </v-card-actions>
                                 </v-card>
                             </v-dialog>

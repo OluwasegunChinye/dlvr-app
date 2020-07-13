@@ -3,8 +3,11 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Revdoc from '../views/Revdoc.vue'
 import Redl from '../views/Redl.vue'
-import Vlform from '../views/Vlform'
-import Vlpay from '../views/Vlpay'
+import Vlform from '../views/Vlform.vue'
+import Vlpay from '../views/Vlpay.vue'
+import Track from '../views/Track.vue'
+import Vdocform from '../views/Vdocform.vue'
+import Vdocpay from '../views/Vdocpay.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +36,21 @@ Vue.use(VueRouter)
     path: '/payment',
     name: 'Vlpay',
     component : Vlpay
+  },
+  {
+    path: '/tracker',
+    name: 'Track',
+    component : Track
+  },
+  {
+    path: '/data',
+    name: 'Vdocform',
+    component : Vdocform
+  },
+  {
+    path: '/process-payment',
+    name: 'Vdocpay',
+    component : Vdocpay
   },
 ]
 
