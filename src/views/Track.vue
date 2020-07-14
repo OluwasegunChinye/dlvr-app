@@ -13,7 +13,7 @@
                     <v-card color="#4FC3F7"> 
                         <v-card-title class="justify-center white--text"> TRACK YOUR LICENCE </v-card-title>
                         <v-timeline>
-                            <v-timeline-item  color="white" large icon="fas fa-cog" icon-color="green" class="white--text">Processing</v-timeline-item> 
+                            <v-timeline-item  color="white" large icon="fas fa-cog" icon-color="#01579B" class="#01579B--text">Processing</v-timeline-item> 
                             <v-timeline-item class="text-right white--text" color="white"  large icon="far fa-address-card" icon-color="#757575" ></v-timeline-item>
                             <v-timeline-item large color="white" icon="fas fa-shipping-fast" icon-color="#757575" class="#757575--text"></v-timeline-item>
                             <v-timeline-item large color="white" icon="fas fa-check" icon-color="#757575" ></v-timeline-item>

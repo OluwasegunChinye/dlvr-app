@@ -11,17 +11,17 @@
             <v-row justify-sm="center">
                 <v-col cols="12" sm="6">
                     <v-card  color="#D1C4E9">
-                        <v-card-subtitle class="mb-5 white--text">Hello,  Abubakah Emeka Bola </v-card-subtitle>
-                        <v-card-subtitle class="white--text">ENTER DELIVERY ADDRESS HERE</v-card-subtitle>
+                        <v-card-subtitle class="mb-5 black--text">Hello,  Abubakah Emeka Bola </v-card-subtitle>
+                        <v-card-subtitle class="black--text">ENTER DELIVERY ADDRESS HERE</v-card-subtitle>
                         <v-text-field class="ma-5" outlined value="101, Ikoyi Street" label=" Address" readonly="" append-icon="far fa-check-circle" ></v-text-field>
                         <v-text-field outlined  class="ma-5" value="Ikoyi Post office" label="Nearest Bus/Stop" readonly="" append-icon="far fa-check-circle"></v-text-field>
                         
-                        <v-card-title class="white--text">BILLING :</v-card-title>
-                        <v-card-subtitle class="white--text">AUTO-REG : <span style="color: white; font-size: 25px;">3,500 NGN</span>  <p >ROAD WORTHINESS : <span style="color: white; font-size: 25px;">3,000 NGN</span></p>  
-                        <p style="color: white">INSURANCE: <span style="color: white; font-size: 25px;">5,500 NGN</span></p>
-                         <p style="color: white">Delivery Fee : <span style="color: white; font-size: 25px;"> 1,000 NGN</span></p>
+                        <v-card-title class="black--text">BILLING :</v-card-title>
+                        <v-card-subtitle class="black--text">AUTO-REG : <span style="color: black; font-size: 25px;">3,500 NGN</span>  <p >ROAD WORTHINESS : <span style="color: black; font-size: 25px;">3,000 NGN</span></p>  
+                        <p style="color: black">INSURANCE: <span style="color: black; font-size: 25px;">5,500 NGN</span></p>
+                         <p style="color: black">Delivery Fee : <span style="color: black; font-size: 25px;"> 1,000 NGN</span></p>
                          </v-card-subtitle>
-                        <v-card-title class="white--text"> TOTAL : <span style="font-size: 30px; color: white;">13,000 NGN</span> </v-card-title>
+                        <v-card-title class="black--text"> TOTAL : <span style="font-size: 30px; color: black;">13,000 NGN</span> </v-card-title>
                     </v-card>
                 </v-col>
             </v-row>

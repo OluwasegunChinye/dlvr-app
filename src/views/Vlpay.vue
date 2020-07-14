@@ -4,21 +4,21 @@
             <v-row justify-sm="center">
                 <v-col cols="12" sm="8">
                     <v-card color="#00E676">
-                        <p style="letter-spacing: 3px; text-align: center; padding:5px; color: white; font-weight: bold;font-size:15px;">LICENCE NUMBER : ABCD1234XYZ</p>
+                        <p style="letter-spacing: 3px; text-align: center; padding:5px; color:black; font-weight: bold;font-size:15px;">LICENCE NUMBER : ABCD1234XYZ</p>
                     </v-card>
                 </v-col>
             </v-row>
             <v-row justify-sm="center">
                 <v-col cols="12" sm="6">
-                    <v-card color="#00E676">
-                        <v-card-subtitle class="mb-5 white--text">Hello,  Abubakah Emeka Bola </v-card-subtitle>
-                        <v-card-subtitle class="white--text">ENTER DELIVERY ADDRESS HERE</v-card-subtitle>
+                    <v-card color="#adf7b6">
+                        <v-card-subtitle class="mb-5 black--text">Hello,  Abubakah Emeka Bola </v-card-subtitle>
+                        <v-card-subtitle class="black--text">ENTER DELIVERY ADDRESS HERE</v-card-subtitle>
                         <v-text-field class="ma-5" outlined value="101, Ikoyi Street" label=" Address" readonly="" append-icon="far fa-check-circle" ></v-text-field>
                         <v-text-field outlined  class="ma-5" value="Ikoyi Post office" label="Nearest Bus/Stop" readonly="" append-icon="far fa-check-circle"></v-text-field>
                         
-                        <v-card-title class="white--text">BILLING :</v-card-title>
-                        <v-card-title class="white--text">Licence Fee : <span>10,500 NGN</span>Delivery Fee : <span> 1,000 NGN</span></v-card-title>
-                        <v-card-title class="white--text"> TOTAL : <span style="font-size: 40px; font-weight:bold; letter-spacing: 2px;">11,500 NGN</span> </v-card-title>
+                        <v-card-title class="black--text">BILLING :</v-card-title>
+                        <v-card-title class="black--text">Licence Fee : <span>10,500 NGN</span>Delivery Fee : <span> 1,000 NGN</span></v-card-title>
+                        <v-card-title class="black--text"> TOTAL : <span style="font-size: 40px; font-weight:bold; letter-spacing: 2px;">11,500 NGN</span> </v-card-title>
                     </v-card>
                 </v-col>
             </v-row>
@@ -26,7 +26,7 @@
                 <v-dialog v-model="dialog" persistent max-width="450">
                     <template v-slot:activator="{ on, attrs }">    
                         <v-col cols="10" sm="6" style="margin-top: 50px;">
-                            <v-btn block x-large="" v-bind="attrs" v-on="on" color="#00E676" class="white--text">Make Payment</v-btn>
+                            <v-btn block x-large="" v-bind="attrs" v-on="on" color="#00E676" class="black--text">Make Payment</v-btn>
                         </v-col>
                     </template>
                     <v-card>

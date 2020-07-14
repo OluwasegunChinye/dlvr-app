@@ -4,7 +4,7 @@
             <v-container>
                 <v-row style="justify-content: center;" justify="center;">
                     <v-col cols="12" sm="6" style="margin-top: 200px;">
-                       <v-text-field label="enter vehicle registration number" outlined="" hint="example ABC1234DE" value="ABC1234DE" readonly=""></v-text-field>
+                       <v-text-field label="enter vehicle registration number" outlined="" hint="example ABC-1234-DE" value="ABC-1234-DE" readonly=""></v-text-field>
                        
                        <!-- dialog -->
                         <v-row justify="center">
