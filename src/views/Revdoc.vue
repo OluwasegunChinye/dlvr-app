@@ -11,15 +11,15 @@
                             <v-dialog v-model="dialog" persistent max-width="400">
                                 <template v-slot:activator="{ on, attrs }">
                                     <v-container>
-                                        <v-btn color="#00E676" v-bind="attrs" v-on="on" block large class="text-capitalize white--text "> send </v-btn>
+                                        <v-btn v-bind="attrs" v-on="on" block large class="ubtn text-capitalize white--text "> send </v-btn>
                                     </v-container>
                                 </template>
                                 <v-card>
-                                    <v-card-title style="font-size: 16px">Check SMS for Code & Enter</v-card-title>
+                                    <v-card-title style="font-size: 16px; color:#0575e6">Check SMS for Code & Enter</v-card-title>
                                     <v-text-field label="enter pin" class="pa-5" outlined="" type="password" hint="enter 0000"></v-text-field>
                                     <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="#00E676" @click="dialog  = false" router to="/data" class="text-capitalize white--text " >Done</v-btn>
+                                    <v-btn @click="dialog  = false" router to="/data" class=" ubtn text-capitalize white--text " >Done</v-btn>
                                     </v-card-actions>
                                 </v-card>
                             </v-dialog>

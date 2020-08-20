@@ -3,45 +3,50 @@
        <v-container>
             <v-row justify-sm="center">
                 <v-col cols="12" sm="8">
-                    <v-card color="#6A1B9A">
+                    <v-card color="#0575e6">
                         <p style="letter-spacing: 3px; text-align: center; padding:5px; color: white; font-weight: bold;font-size:15px;">VEHICLE REG NUMBER : ABC1234DE</p>
                     </v-card>
                 </v-col>
             </v-row>
             <v-row justify-sm="center">
                 <v-col cols="12" sm="6">
-                    <v-card  color="#D1C4E9">
-                        <v-card-subtitle class="mb-5 black--text">Hello,  Abubakah Emeka Bola </v-card-subtitle>
-                        <v-card-subtitle class="black--text">ENTER DELIVERY ADDRESS HERE</v-card-subtitle>
-                        <v-text-field class="ma-5" outlined value="101, Ikoyi Street" label=" Address" readonly="" append-icon="far fa-check-circle" ></v-text-field>
-                        <v-text-field outlined  class="ma-5" value="Ikoyi Post office" label="Nearest Bus/Stop" readonly="" append-icon="far fa-check-circle"></v-text-field>
+                    <!-- <v-card  color="#ffff"> -->
                         
-                        <v-card-title class="black--text">BILLING :</v-card-title>
-                        <v-card-subtitle class="black--text">AUTO-REG : <span style="color: black; font-size: 25px;">3,500 NGN</span>  <p >ROAD WORTHINESS : <span style="color: black; font-size: 25px;">3,000 NGN</span></p>  
-                        <p style="color: black">INSURANCE: <span style="color: black; font-size: 25px;">5,500 NGN</span></p>
-                         <p style="color: black">Delivery Fee : <span style="color: black; font-size: 25px;"> 1,000 NGN</span></p>
-                         </v-card-subtitle>
-                        <v-card-title class="black--text"> TOTAL : <span style="font-size: 30px; color: black;">13,000 NGN</span> </v-card-title>
-                    </v-card>
+                    <v-list>
+                        <v-card-subtitle  style="font-weight: bold; color:#0575e6">Hello,  Lasisi John Hollywood </v-card-subtitle>
+                    <!-- <v-card-subtitle class="black--text">ENTER DELIVERY ADDRESS HERE</v-card-subtitle> -->
+                    <v-text-field class="ma-1" outlined value="101, Ikoyi Street" label=" Enter Delivery Address Here" readonly="" append-icon="far fa-check-circle" ></v-text-field>
+                        <v-card-subtitle class="" style="color:#0575e6; font-weight: bold; letter-spacing: 2px">BILLING</v-card-subtitle>
+                        <v-list-item-group v-model="price" color="primary">
+                            <v-list-item v-for="(price, i) in prices" :key="i" >  
+                                <v-list-item-content>
+                                <v-list-item-subtitle v-text="price.text" ></v-list-item-subtitle>
+                                </v-list-item-content>
+                                <v-list-item-content>
+                                <v-list-item-subtitle v-text="price.cost"></v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </v-list-item-group>
+                    </v-list>
                 </v-col>
             </v-row>
             <v-row justify="center">
                 <v-dialog v-model="dialog" persistent max-width="450">
                     <template v-slot:activator="{ on, attrs }">    
                         <v-col cols="10" sm="6" style="margin-top: 50px;">
-                            <v-btn block x-large="" v-bind="attrs" v-on="on" color="#6A1B9A" class="white--text justify-center">Make Payment</v-btn>
+                            <v-btn block x-large="" v-bind="attrs" v-on="on" class=" ubtn white--text justify-center text-capitalize">Make Payment</v-btn>
                         </v-col>
                     </template>
                     <v-card>
-                        <v-card-title>Choose Payment Method</v-card-title>
+                        <v-card-title style="color:#0575e6">Choose Payment Method</v-card-title>
                         <v-col class="d-flex" cols="12" sm="6"> <v-select :items="items" label="click to choose" dense outlined ></v-select></v-col>
 
                         <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn color="#00E676" @click="dialog  = false"  class="text-capitalize white--text " router to="/Tracker" >Check</v-btn>
+                        <v-btn @click="dialog  = false"  class="text-capitalize white--text ubtn " router to="/Tracker" >Check</v-btn>
                         </v-card-actions>
-                        <v-card-subtitle> Delivery info : </v-card-subtitle>
-                        <v-card-subtitle> Name : Lasisi John Hollywood | Address 101, Ikoyi Street  Ikoyi. Post Office Bus Stop. </v-card-subtitle>
+                        <v-card-subtitle style="color:#0575e6"> Delivery info : </v-card-subtitle>
+                        <v-card-subtitle style="color:#0575e6"> Name : Lasisi John Hollywood | Address 101, Ikoyi Street  Ikoyi. Post Office Bus Stop. </v-card-subtitle>
                     </v-card>
                 </v-dialog>
             </v-row>
@@ -53,7 +58,16 @@
 <script>
 export default {
     data : () => ({
-        items: ['USSD', ' MOBILE TRANSFER', 'CARD PAYMENT']
+        items: ['USSD', ' MOBILE TRANSFER', 'CARD PAYMENT'],
+        price: 1,
+        prices: [
+            { text: 'Auto-Reg : ', cost: '0.00 NGN' },
+            { text: 'Road Worthiness : ', cost: '0.00 NGN' },
+            { text: 'Insurance : ', cost: '0.00 NGN' },
+            { text: 'Delivery : ', cost: '0.00 NGN' },
+            { text: 'Process-Fee : ', cost: '0.00 NGN' },
+            { text: 'Total : ', cost: '0.00 NGN' },
+        ]
     })
 }
 </script>

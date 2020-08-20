@@ -31,5 +31,8 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
- 
+.ubtn {
+ background: linear-gradient(to right, #00f260, #0575e6);
+} 
+
 </style>

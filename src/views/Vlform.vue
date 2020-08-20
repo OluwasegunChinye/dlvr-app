@@ -1,11 +1,11 @@
 <template>
     <div>
-        <v-card class="ma-5 pa-1" color="#E1BEE7">
+        <!-- <v-card class="ma-5 pa-1" color="#E1BEE7"> -->
             <v-form>
                 <v-container>
                     <v-row>
                         <v-col cols="12">
-                            <v-card color="#6A1B9A">
+                            <v-card color="#00f260">
                                 <p style="letter-spacing: 3px; text-align: center; padding:5px; color: white; font-weight: bold;font-size:15px;">LICENCE NUMBER : ABCD1234XYZ</p>
                             </v-card>
 
@@ -28,14 +28,14 @@
                         <v-col cols="6" sm="3">
                             <v-text-field outlined value="" label="BG" hint="blood group" required append-icon="far fa-edit"></v-text-field>
                             <v-text-field filled value="Class E" label="class of licence" readonly="" append-icon="fas fa-lock"></v-text-field>
-                            <v-btn class="text-capitalize pa-5 white--text mb-5 " style="margin-top: 30px" block color="#6A1B9A" large router to="/payment">save</v-btn>
                         </v-col>
-                        
-                    </v-row>
-                    
+                        <v-col cols="12" sm="6">
+                            <v-btn class=" ubtn text-capitalize pa-5 white--text mb-5 " style="margin-top: 30px" block large router to="/payment">click to renew</v-btn>
+                        </v-col>
+                    </v-row> 
                 </v-container> 
             </v-form>
-        </v-card>
+        <!-- </v-card> -->
        
     </div>
 </template>
