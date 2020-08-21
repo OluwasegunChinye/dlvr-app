@@ -19,9 +19,10 @@
                             <v-timeline-item large color="white" icon="fas fa-check" icon-color="#757575" ></v-timeline-item>
                         </v-timeline>
                     <!-- </v-card> -->
+                    <v-btn block style="margin-top: 25px;" route to="/"  class=" ubtn white--text text-capitalize">Go to Home page</v-btn>
                 </v-col>
             </v-row>
-            <v-btn block style="margin-top: 25px;" route to="/"  class=" ubtn white--text text-capitalize">Go to Home page</v-btn>
+            
         </v-container>
     </div>
 </template>

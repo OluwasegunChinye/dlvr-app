@@ -17,7 +17,7 @@
                     <!-- <v-card-subtitle class="black--text">ENTER DELIVERY ADDRESS HERE</v-card-subtitle> -->
                     <v-text-field class="ma-1" outlined value="101, Ikoyi Street" label=" Enter Delivery Address Here" readonly="" append-icon="far fa-check-circle" ></v-text-field>
                         <v-card-subtitle class="" style="color:#0575e6; font-weight: bold; letter-spacing: 2px">BILLING</v-card-subtitle>
-                        <v-list-item-group v-model="price" color="primary">
+                        <v-list-item-group v-model="price" color="#0575e6">
                             <v-list-item v-for="(price, i) in prices" :key="i" >  
                                 <v-list-item-content>
                                 <v-list-item-subtitle v-text="price.text" ></v-list-item-subtitle>

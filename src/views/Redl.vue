@@ -15,7 +15,7 @@
                                     </v-container>
                                 </template>
                                 <v-card>
-                                    <v-card-title style="font-size: 16px; color:#00f260">Check SMS for Code & Enter</v-card-title>
+                                    <v-card-title style="font-size: 16px; color:#00c853">Check SMS for Code & Enter</v-card-title>
                                     <v-text-field label="enter pin" class="pa-5" outlined="" type="password" hint="enter 0000"></v-text-field>
                                     <v-card-actions>
                                     <v-spacer></v-spacer>
