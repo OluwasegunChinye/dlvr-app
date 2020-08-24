@@ -4,7 +4,7 @@
             <v-container>
                 <v-row style="justify-content: center;" justify="center;">
                     <v-col cols="12" sm="6" style="margin-top: 200px;">
-                       <v-text-field label="enter licence number" outlined="" hint="example ABCD1234XYZ" value="ABCD1234XYZ" readonly=""></v-text-field>
+                       <v-text-field label="enter licence number" outlined="" hint="example ABCD1234XYZ"></v-text-field>
                        
                        <!-- dialog -->
                         <v-row justify="center">

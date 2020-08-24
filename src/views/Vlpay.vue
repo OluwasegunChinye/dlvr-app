@@ -43,7 +43,7 @@
 
                         <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn @click="dialog  = false"  class=" ubtn text-capitalize white--text " router to="/Tracker" >Check</v-btn>
+                        <v-btn @click="dialog  = false"  class=" ubtn text-capitalize white--text " router to="/Tracker" >Done</v-btn>
                         </v-card-actions>
                         <v-card-subtitle style="color:#00c853;"> Delivery info : </v-card-subtitle>
                         <v-card-subtitle  style="color:#00c853;"> Name : Abubakah Emeka Bola | Address 101, Ikoyi Street  Ikoyi. Post Office Bus Stop. </v-card-subtitle>

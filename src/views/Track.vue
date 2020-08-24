@@ -3,7 +3,7 @@
         <v-container>
             <v-row justify="center">
                 <v-col cols="12" sm="8">
-                    <v-card style="margin-top:40px; background: linear-gradient(to right, #00f260, #0575e6);" >
+                    <v-card style="margin-top:40px; background:#00c853;" >
                         <v-card-subtitle class="white--text">Hello,  Your Transaction was successfull <i class="far fa-thumbs-up"></i></v-card-subtitle>
                     </v-card>
                 </v-col>
@@ -11,7 +11,7 @@
             <v-row justify="center">
                 <v-col cols="12" sm="6">
                     <!-- <v-card color="#4FC3F7">  -->
-                        <v-card-title class="justify-center white--text "> TRACK YOUR LICENCE </v-card-title>
+                        <v-card-title class="justify-center primary--text "> TRACK YOUR LICENCE </v-card-title>
                         <v-timeline>
                             <v-timeline-item  color="white" large icon="fas fa-cog" icon-color="#01579B" style="color:#0575e6;">Processing</v-timeline-item> 
                             <v-timeline-item class="text-right white--text" color="white"  large icon="far fa-address-card" icon-color="#757575" ></v-timeline-item>
